@@ -220,6 +220,50 @@ export function EventItem({ eventId }: { eventId: any }) {
             onChange={handleInputChange}
           />
         )}
+        {event.round_title_3 &&
+          renderField(
+            "round_title_3",
+            "Round 3 Title",
+            <Input
+              id="round_title_3"
+              name="round_title_3"
+              value={event.round_title_3}
+              onChange={handleInputChange}
+            />
+          )}
+        {event.round_desc_3 &&
+          renderField(
+            "round_desc_3",
+            "Round 3 Description",
+            <Textarea
+              id="round_desc_3"
+              name="round_desc_3"
+              value={event.round_desc_3}
+              onChange={handleInputChange}
+            />
+          )}
+        {event.round_title_4 &&
+          renderField(
+            "round_title_4",
+            "Round 4 Title",
+            <Input
+              id="round_title_4"
+              name="round_title_4"
+              value={event.round_title_4}
+              onChange={handleInputChange}
+            />
+          )}
+        {event.round_desc_4 &&
+          renderField(
+            "round_desc_4",
+            "Round 4 Description",
+            <Textarea
+              id="round_desc_4"
+              name="round_desc_4"
+              value={event.round_desc_4}
+              onChange={handleInputChange}
+            />
+          )}
         {renderField(
           "contact_name_1",
           "Contact Name 1",
@@ -308,7 +352,6 @@ export function EventItem({ eventId }: { eventId: any }) {
           <Input
             id="teamSize"
             name="teamSize"
-            type="number"
             value={event.teamSize.toString()}
             onChange={handleInputChange}
           />

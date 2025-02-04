@@ -8,6 +8,10 @@ export interface Event {
     round_desc_1: string
     round_title_2: string
     round_desc_2: string
+    round_title_3: string
+    round_desc_3: string
+    round_title_4: string
+    round_desc_4: string
     contact_name_1: string
     roll_1: string
     contact_mobile_1: number
@@ -16,7 +20,7 @@ export interface Event {
     contact_mobile_2: number
     hall: string
     eventRules: string
-    teamSize: number
+    teamSize: string
     date: string
     timing: string
     closed: boolean
