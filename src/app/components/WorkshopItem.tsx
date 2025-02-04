@@ -99,7 +99,6 @@ export function WorkshopItem({ workshopId }: { workshopId: any }) {
             name="wid"
             value={workshop.wid}
             onChange={handleInputChange}
-            readOnly
           />
         )}
         {renderField(
