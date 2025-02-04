@@ -19,5 +19,6 @@ export interface Workshop {
     prerequisites: string
     agenda: Array<Array<{ time: string; description: string[] }>>
     earlyBirdActive: boolean
+    one_line_desc: string
 }
 
