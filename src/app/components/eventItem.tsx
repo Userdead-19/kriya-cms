@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import type { Event } from "../types/events";
 import axios from "axios";
 
-export function EventItem({ eventId }: { eventId: string }) {
+export function EventItem({ eventId }: { eventId: any }) {
   const [event, setEvent] = useState<Event | null>(null);
   const [editing, setEditing] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -23,7 +23,7 @@ export function EventItem({ eventId }: { eventId: string }) {
     try {
       setLoading(true); // Start loading state
       const response = await axios.get(
-        `https://kriya25-backend.onrender.com/api/cms/events/${eventId}`
+        `https://kriyabackend.psgtech.ac.in/api/cms/events/${eventId}`
       );
 
       const data = response.data;
@@ -76,7 +76,7 @@ export function EventItem({ eventId }: { eventId: string }) {
 
     try {
       const response = await axios.put(
-        `https://kriya25-backend.onrender.com/api/cms/events/${eventId}`,
+        `https://kriyabackend.psgtech.ac.in/api/cms/events/${eventId}`,
         event
       );
 
